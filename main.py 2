@@ -1,0 +1,24 @@
+# Inheritance
+# Problem: Display Doctor Details
+
+class Hospital:
+    def hospital_details(self):
+        self.hospital_name = input("Enter hospital name: ")
+
+
+class Doctor(Hospital):
+    def doctor_details(self):
+        self.doctor_name = input("Enter doctor name: ")
+        self.specialization = input("Enter specialization: ")
+
+    def display(self):
+        print("Hospital Name:", self.hospital_name)
+        print("Doctor Name:", self.doctor_name)
+        print("Specialization:", self.specialization)
+
+
+doctor = Doctor()
+
+doctor.hospital_details()
+doctor.doctor_details()
+doctor.display()
