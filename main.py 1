@@ -1,0 +1,33 @@
+
+
+class Hotel:
+    def __init__(self, customer, hotel_name, room_type):
+        self.customer = customer
+        self.hotel_name = hotel_name
+        self.room_type = room_type
+
+    def get_details(self):
+        print("Customer Name:", self.customer)
+        print("Hotel Name:", self.hotel_name)
+        print("Room Type:", self.room_type)
+
+
+class Booking:
+    def __init__(self, booking_id, days, guests):
+        self.booking_id = booking_id
+        self.days = days
+        self.guests = guests
+
+    def booking_details(self):
+        print("Booking ID:", self.booking_id)
+        print("Number of Days:", self.days)
+        print("Number of Guests:", self.guests)
+
+
+# Object creation
+hotel1 = Hotel("Kavya", "Grand Palace", "Deluxe")
+booking1 = Booking(101, 3, 2)
+
+# Calling methods
+hotel1.get_details()
+booking1.booking_details()
